@@ -1,0 +1,78 @@
+#Project 1: Pandas to analyse shark attack data
+#Edu
+
+https://www.canva.com/design/DAFyF_xxP0A/cNi-t9aAcvXD63hXYqP5AA/edit
+
+#Overview
+
+The goal of this project is to clean and analyse a dataset on global shark attacks throughout the last few centuries, and use it to answer a set of questions on the topic of shark attacks.
+
+#Requirements/Libraries
+Code was written in Python using Jupyter Notebook and Visual Studio Code. Libraries used:
+    - Numpy
+    - Pandas
+    - Matplotlib
+    - Seaborn
+    - Regex
+    
+#Questions:
+
+Based on the data available:
+
+    - When attacking swimmers, do sharks tend to target smaller and therefore easier targets?
+    - Do bigger sharks have more of a tendency to attack swimmers, surfers and people in boats? Could they be aware that their size makes them more capable of doing so? Or do small sharks attack just as much?
+    - When comparing attacks on swimmers, surfers and people boating, do sharks attack the smaller of these targets more? If so, what can explain this?
+    - Is there any correlation in attacks between shark size and human age? Would this correlation tell us anything about bigger or smaller sharks having more of a tendency to target larger (adult) or smaller (child) targets? 
+    
+
+#Errors, limitations, caveats:
+
+    - Half of the data comes from USA and Australia. So any data presented as 'global' should be taken with a pinch of salt. To not present mostly US and Australian data as global, I have (mostly) limited the questions to USA and Australia.
+    - Without adequate data on population distribution or shark populations in USA and Australia, not many solid conclusions can be drawn, because 'more shark attacks' tells you nothing without context like what % of the population is male, female, under 25, etc etc. In question 1 I have estimated what the population distribution in both countries looks like compared to the distribution of shark attacks by age. Question 2 assumes shark populations are more or less normally distributed in size. I make these kinds of assumptions throughout.
+    - Many other factors which can't be accounted for - exposure to danger in water when surfing vs fishing vs swimming - are quite likely to be the main explaining factors for most conclusions.
+    - Some of the data is also from over 200 years ago, making it pretty unreliable.
+    
+#1 - When attacking swimmers, do sharks tend to target smaller, easier targets?
+
+https://github.com/edwardrodgermartinez/project_1/blob/d1e55120eb50dc9ab31c70550371b36c5b414b11/images/figure1.png
+
+https://github.com/edwardrodgermartinez/project_1/blob/d1e55120eb50dc9ab31c70550371b36c5b414b11/images/figure2.png
+
+From this data we can observe a similar distribution overall - but more of a skew towards children (10-15 and 5-10) being attacked in Australia. 
+
+        - Overall: Age seems to matter more than size - distribution skews more towards young people, but especially from 15 onwards. This is probably down to young people being more reckless and taking more risks, rather than it being because of their size.
+        - However - children get attacked more in Australia. So even though size matters very little, it seems to matter more in Australia - where if you are a small child you are more likely to get attacked.
+
+
+#2 - Do bigger sharks have more of a tendency to attack swimmers, surfers and people in boats?
+
+https://github.com/edwardrodgermartinez/project_1/blob/d1e55120eb50dc9ab31c70550371b36c5b414b11/images/figure3.png
+
+https://github.com/edwardrodgermartinez/project_1/blob/d1e55120eb50dc9ab31c70550371b36c5b414b11/images/figure4.png
+
+    - From this data, we can interpret that shark size has less of an effect on number of attacks in Australia than in the US. In the US, smaller sharks seem to attack more often, which goes against what I would have predicted.
+    - There is more of a 'normal' distribution in Australia.
+    - In any case, there is no pattern that larger sharks attack on more occasions.
+
+
+#3 - When comparing attacks on swimmers, surfers and people boating, do sharks attack the smaller of these targets more?
+
+https://github.com/edwardrodgermartinez/project_1/blob/d1e55120eb50dc9ab31c70550371b36c5b414b11/images/figure5.png
+
+    - So smaller objects get attacked more frequently - so in this case, size does matter. Sharks are more aware of and more often attack smaller objects in sea, like swimmers and surfboards, than boats.
+    - However, we must also take into account that other factors, such as being more exposed to the water, have an affect on this. These probably affect your likelihood of being attacked by a shark more than the size of your body, surfboard, or boat.
+
+#4 - Is there any correlation in attacks between shark size and human age?
+
+https://github.com/edwardrodgermartinez/project_1/blob/d1e55120eb50dc9ab31c70550371b36c5b414b11/images/figure8.png
+
+No correlation - bigger sharks don't prefer smaller humans, children don't get attacked more often by any particuar length of shark. 
+
+#Conclusions: 
+    - Except for certain small exceptions, like children getting attacked more in Australia, size generally doesn't matter.
+    
+     1. The distribution in age of shark attacks in the US and Australia doesn't vary massively from the age distribution in general. It skews towards young people, but not 'smaller' people. 
+     2. Bigger sharks do not attack more frequently in this dataset than smaller sharks. In fact, in Australia, the smaller sharks attack more frequently. So there is no indication that bigger sharks attack more.
+     3. Shark attacks on surfboards are more common in this dataset than attacks on boats. This could indicate that, to a certain degree, size of object to attack DOES matter to sharks. However, the fact swimming, then surfing, then boating are the most common type of attacks, indicate that it is probably more down to how exposed you are to the water. 
+     4. Bigger sharks generally don't choose smaller or younger people. Children are not particularly affected by any size of shark. There is no correlation here. 
+     Overall: Despite some exceptions, size doesn't matter - sharks care more about who you are, or about the connection between you and the shark :) (it's a joke)
